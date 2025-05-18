@@ -1,6 +1,6 @@
 # Ruteador Perú
 
-Una aplicación de escritorio que encuentra la ruta más corta entre dos regiones de Perú utilizando el algoritmo de Dijkstra y la muestra en un mapa interactivo.
+Una aplicación de escritorio que encuentra la ruta más corta entre dos regiones de Perú utilizando el algoritmo de Dijkstra y la muestra en un mapa de coordenadas.
 
 ## Características
 
@@ -48,11 +48,6 @@ Utilice uno de los siguientes scripts incluidos:
 python main.py
 ```
 
-Si la ejecución directa falla, puede probar con la versión alternativa:
-```bash
-python main_pyside2.py
-```
-
 ### Cómo utilizar:
 
 1. Seleccione una región de origen en el primer menú desplegable
@@ -73,4 +68,6 @@ python main_pyside2.py
 
 La aplicación utiliza dos archivos CSV:
 - `regiones.csv`: Contiene los nombres y coordenadas de las 25 regiones del Perú
-- `distancias_regionales_peru_enriquecido.csv`: Contiene las distancias entre regiones conectadas
+- `distancias_regionales_peru_enriquecido.csv`: Contiene las distancias entre regiones conectadas o fronterizas fisicamente.
+
+Created by LessFor01
