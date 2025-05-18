@@ -1,0 +1,98 @@
+origen,destino,distancia_km,region_origen,region_destino
+Puno,Cusco,389,Puno,Cusco
+Puno,Puerto Maldonado,823,Puno,Madre de Dios
+Puno,Arequipa,326,Puno,Arequipa
+Puno,Moquegua,257,Puno,Moquegua
+Puno,Tacna,377,Puno,Tacna
+Cusco,Puno,389,Cusco,Puno
+Cusco,Arequipa,513,Cusco,Arequipa
+Cusco,Abancay,198,Cusco,Apurimac
+Cusco,Ayacucho,597,Cusco,Ayacucho
+Cusco,Puerto Maldonado,533,Cusco,Madre de Dios
+Cusco,Huancayo,915,Cusco,Junin
+Cusco,Pucallpa,1890,Cusco,Ucayali
+Arequipa,Puno,326,Arequipa,Puno
+Arequipa,Cusco,513,Arequipa,Cusco
+Arequipa,Moquegua,220,Arequipa,Moquegua
+Arequipa,Abancay,1026,Arequipa,Apurimac
+Arequipa,Ica,706,Arequipa,Ica
+Arequipa,Ayacucho,1094,Arequipa,Ayacucho
+Moquegua,Arequipa,220,Moquegua,Arequipa
+Moquegua,Puno,257,Moquegua,Puno
+Moquegua,Tacna,158,Moquegua,Tacna
+Tacna,Moquegua,158,Tacna,Moquegua
+Tacna,Puno,377,Tacna,Puno
+Puerto Maldonado,Cusco,533,Madre de Dios,Cusco
+Puerto Maldonado,Puno,823,Madre de Dios,Puno
+Puerto Maldonado,Pucallpa,2423,Madre de Dios,Ucayali
+Abancay,Cusco,198,Apurimac,Cusco
+Abancay,Arequipa,1026,Apurimac,Arequipa
+Abancay,Ayacucho,399,Apurimac,Ayacucho
+Ayacucho,Abancay,399,Ayacucho,Apurimac
+Ayacucho,Cusco,597,Ayacucho,Cusco
+Ayacucho,Arequipa,1094,Ayacucho,Arequipa
+Ayacucho,Huancavelica,245,Ayacucho,Huancavelica
+Ayacucho,Ica,388,Ayacucho,Ica
+Ayacucho,Huancayo,318,Ayacucho,Junin
+Ica,Ayacucho,388,Ica,Ayacucho
+Ica,Huancavelica,340,Ica,Huancavelica
+Ica,Arequipa,706,Ica,Arequipa
+Ica,Lima,303,Ica,Lima
+Huancavelica,Ayacucho,245,Huancavelica,Ayacucho
+Huancavelica,Ica,340,Huancavelica,Ica
+Huancavelica,Huancayo,147,Huancavelica,Junin
+Huancavelica,Lima,495,Huancavelica,Lima
+Huancayo,Cusco,915,Junín,Cusco
+Huancayo,Ayacucho,318,Junín,Ayacucho
+Huancayo,Huancavelica,147,Junín,Huancavelica
+Huancayo,Lima,298,Junin,Lima
+Huancayo,Pucallpa,735,Junin,Ucayali
+Huancayo,Cerro de Pasco,252,Junín,Pasco
+Pucallpa,Huanuco,375,Ucayali,Huanuco
+Pucallpa,Cerro de Pasco,483,Ucayali,Pasco
+Pucallpa,Huancayo,735,Ucayali,Junin
+Pucallpa,Cusco,1890,Ucayali,Cusco
+Pucallpa,Puerto Maldonado,2423,Ucayali,Madre de Dios
+Cerro de Pasco,Huanuco,108,Pasco,Huanuco
+Cerro de Pasco,Huancayo,252,Pasco,Junin
+Cerro de Pasco,Pucallpa,483,Pasco,Ucayali
+Huanuco,Cerro de Pasco,108,Huánuco,Pasco
+Huanuco,Pucallpa,375,Huanuco,Ucayali
+Huanuco,Moyobamba,711,Huanuco,San Martin
+Huanuco,Trujillo,971,Huanuco,La Libertad
+Huanuco,Huaraz,349,Huanuco,Ancash
+Huanuco,Lima,410,Huanuco,Lima
+Lima,Ica,303,Lima,Ica
+Lima,Cerro de Pasco,302,Lima,Pasco
+Lima,Huancayo,298,Lima,Junin
+Lima,Huaraz,406,Lima,Ancash
+Lima,Huanuco,410,Lima,Huanuco
+Lima,Huancavelica,495,Lima,Huancavelica
+Lima,Callao,10,Lima,Callao
+Callao,Lima,10,Callao,Lima
+Huaraz,Lima,406,Ancash,Lima
+Huaraz,Huanuco,349,Ancash,Huanuco
+Huaraz,Trujillo,340,Ancash,La Libertad
+Moyobamba,Chachapoyas,250,San Martin,Amazonas
+Moyobamba,Trujillo,802,San Martin,La Libertad
+Moyobamba,Huanuco,711,San Martin,Huanuco
+Trujillo,Chiclayo,209,La Libertad,Lambayeque
+Trujillo,Cajamarca,300,La Libertad,Cajamarca
+Trujillo,Chachapoyas,658,La Libertad,Amazonas
+Trujillo,Moyobamba,802,La Libertad,San Martin
+Trujillo,Huanuco,971,La Libertad,Huanuco
+Trujillo,Huaraz,340,La Libertad,Ancash
+Chachapoyas,Cajamarca,335,Amazonas,Cajamarca
+Chachapoyas,Trujillo,658,Amazonas,La Libertad
+Chachapoyas,Moyobamba,250,Amazonas,San Martin
+Cajamarca,Piura,476,Cajamarca,Piura
+Cajamarca,Chiclayo,265,Cajamarca,Lambayeque
+Cajamarca,Trujillo,300,Cajamarca,La Libertad
+Cajamarca,Chachapoyas,335,Cajamarca,Amazonas
+Chiclayo,Piura,211,Lambayeque,Piura
+Chiclayo,Cajamarca,265,Lambayeque,Cajamarca
+Chiclayo,Trujillo,300,Lambayeque,La Libertad
+Piura,Tumbes,278,Piura,Tumbes
+Piura,Chiclayo,211,Piura,Lambayeque
+Piura,Cajamarca,476,Piura,Cajamarca
+Tumbes,Piura,278,Tumbes,Piura
