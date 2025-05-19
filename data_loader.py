@@ -137,9 +137,8 @@ class DataLoader:
                        textcoords='offset points',
                        fontsize=8)
         
-        # Configurar límites del mapa para Perú (aproximados)
-        ax.set_xlim(-84, -68)
-        ax.set_ylim(-19, 0)
+        # Configurar aspecto del mapa
+        ax.set_aspect('equal', adjustable='datalim')
         
         # Configurar título y etiquetas
         ax.set_title('Mapa de Regiones de Perú')
