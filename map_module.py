@@ -2,6 +2,9 @@ import matplotlib.pyplot as plt
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 import networkx as nx
 import numpy as np
+import matplotlib.image as mpimg
+import os
+import matplotlib.transforms as transforms
 
 class MapVisualizer:
     def __init__(self, data_loader, graph_builder):
@@ -23,13 +26,21 @@ class MapVisualizer:
         Dibuja el mapa base con todas las regiones
         """
         self.ax.clear()
+        
+        # Cargar y mostrar la imagen de fondo
+        background_img = mpimg.imread(os.path.join('resources', 'PeruMap.png'))
+        t = transforms.Affine2D().rotate_deg(0).scale(1) + self.ax.transData
+        self.ax.imshow(background_img, extent=[-82.1, -68.5, -19.3, 1.0], transform=t, zorder=0, alpha=0.3)
+        self.ax.set_xlim(-82.1, -68.5)
+        self.ax.set_ylim(-19.3, 1.0)
+        
         self.data_loader.generate_dummy_peru_map(self.ax)
         
         # Obtener coordenadas de las regiones
         region_coords = self.data_loader.get_region_coordinates()
         
         # Dibujar todas las aristas del grafo
-        self._draw_all_edges(region_coords, linewidth=0.5, alpha=0.3, color='gray')
+        self._draw_all_edges(region_coords, linewidth=2, color='blue',alpha=0.4)
         
         self.canvas.draw()
         return self.canvas
