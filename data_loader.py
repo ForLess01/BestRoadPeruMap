@@ -5,6 +5,7 @@ from shapely.geometry import Point
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
+import unicodedata
 
 class DataLoader:
     def __init__(self):
@@ -30,7 +31,29 @@ class DataLoader:
             file_path = os.path.join('data', 'distancias_regionales_peru_enriquecido.csv')
         
         self.distancias_df = pd.read_csv(file_path)
+        self._unify_region_names()
         return self.distancias_df
+
+    def _unify_region_names(self):
+        """
+        Normaliza los nombres de las regiones en el archivo de distancias
+        para que coincidan con los nombres en el archivo de regiones.
+        """
+        def normalize(s):
+            return ''.join(
+                c for c in unicodedata.normalize('NFD', s.lower().strip())
+                if unicodedata.category(c) != 'Mn'
+            )
+        if self.regiones_df is None:
+            self.load_regiones()
+        valid_regions = set(self.regiones_df['region'])
+        region_map = {normalize(r): r for r in valid_regions}
+        self.distancias_df['region_origen'] = self.distancias_df['region_origen'].apply(
+            lambda x: region_map.get(normalize(x), x)
+        )
+        self.distancias_df['region_destino'] = self.distancias_df['region_destino'].apply(
+            lambda x: region_map.get(normalize(x), x)
+        )
     
     def get_region_names(self):
         """
